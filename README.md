@@ -1,5 +1,4 @@
-# MidTermProjectProposal
-
+# Part 1 MidTermProjectProposal
 I've chosen the book "The Green Mile." Published in 1996, this fantasy novel is written by Stephen King. It mainly tells the story of a Black man named John Coffey who is wrongfully imprisoned and awaits the death penalty for the alleged rape and murder of two girls. Initially, because of his race and imposing stature, the prison guards perceive him as menacing. However, his ability to absorb pain and heal others with his supernatural power changes their views. The guards come to see him as a miracle bestowed from God. While they wish to prove his innocence, Coffey willingly faces death. He believes the world's malice causes him too much pain, and he's lost hope in it.
 
 This novel resonated deeply with me. Many readers are awed by John's potent supernatural abilities and moved by his kindness. However, in my view, it also interweaves significant criticisms of the prevailing racism of the time. I wonder if Coffey's innocence was acknowledged solely due to his inherent goodness or was it his angelic-like powers? If he didn't possess such abilities, would the guards still view him as innocent? Would he still earn the audience's empathy? Does someone who fits the stereotypical appearance of a criminal in the public's eyes need supernatural abilities to erase those preconceptions? Or, looking from a realistic perspective, does such an individual need to sacrifice and continually give of themselves to get a chance to be reunderstood equally?
@@ -12,7 +11,21 @@ This time, my main topic is on how to trigger multiple animations with mouse mov
 
 I believe my project is related to prior readings. As I mentioned earlier, most book covers feature Paul, not Coffey, the heart of the book's concept. Many readers also overlook the novel's deeper contemplation about race and appearance. Therefore, my work uses an online platform as a medium and programming as a tool to give a voice to marginalized groups. Moreover, my piece is not just a simple interaction; it aims to inspire audience reflection through an interactive experience. By exploring my work, viewers can intimately understand the perspective I want to convey. Thus, I believe I've applied the reading's theory on interactive design, focusing on the balance of "listening, expressing, and thinking."
 
+# Part 2 part of the code and presudo code
+
+This week, I created the code for evil cirlces that appears randomly on book cover and would be moved to and consumed by John when his head(the button) been pressed. Also I created the Halo on his head that would grow to a certain size on his head when button is pressed and would return to zero when button is released. For next week, my main job would be draw out other visual stuff and prepare for the presentation. I just want to get ahead of time a little for next week because I know it would likely be a busy one...
+
+Objects: Evil circles are represented as objects with properties inlcuding x, y, and r for position and radius. The halo is also represented as an object with properties h, w, and v for height, width, and velocity(of its growth).
+
+Array: The circles array is used to store these evil circle objects as we keep producing and filtering out them.
+
+Interactivity: When mouse pressed, John's head will change color and the randon cicles will move towards his head and finally disappear (radius=0), meanwhile the halo on this head will keep growing until a certain size. If mouse released, cirlces stop moving towards him, the color change back to its skin color, and the halo size return to 0.
+
+Time base logic: I uses frameCount to create evil circles at random positions on the "book cover" area every 30 frames.
+
+Functions: preload(): Preloads a custom font before the setup() function is called.; Lamp(xLamp, yLamp): A custom function to draw a lamp object at (xLamp, yLamp); mousePressed(): A function that is triggered when the mouse is pressed. It checks if the mouse is on the button and changes its state and the button color; mouseReleased(): A function that is triggered when the mouse is released. It resets the button state and color.
+
 
 Image on repo:  
 ![image description](./mtSketch.jpg)
-
+![image description](./atan2.jpg)

@@ -25,7 +25,15 @@ Time base logic: I uses frameCount to create evil circles at random positions on
 
 Functions: preload(): Preloads a custom font before the setup() function is called.; Lamp(xLamp, yLamp): A custom function to draw a lamp object at (xLamp, yLamp); mousePressed(): A function that is triggered when the mouse is pressed. It checks if the mouse is on the button and changes its state and the button color; mouseReleased(): A function that is triggered when the mouse is released. It resets the button state and color.
 
+# Part 3 part of the code and presudo code
+
+This week, I finished up coding by sketching out all the detailed position(attached below) and shapes and adding up all the visual things inside my code. I think in this process I found the presudo code I did last week very helpful because this time a lot of my layers are overlaying each other, it is very important to know the relationship of different layers to make sure the sequence is correct. In this process, I created a cunstomized function as the lamps that appears twice in the scene. Beside I also used a for loop that created the bars for the jail cell.
+
+The interactive functions are exactly what I descripted in the part II section of this read me: 
+Interactivity: Upon a mouse pressed event, John's head will undergo a color transformation, and the randomly generated circles will start moving towards his head until they disappear (with their radius shrinking to zero). Simultaneously, the halo around his head will continue expanding until it reaches a certain size. When the mouse button is released, the circles will cease their movement toward John, his color will revert to his natural skin tone, and the halo will reset to its initial size.
+Time-based logic: I am utilizing the frameCount variable to generate malevolent circles at random positions within the "book cover" area every 30 frames.
 
 Image on repo:  
 ![image description](./mtSketch.jpg)
 ![image description](./atan2.jpg)
+![image description](./mtSketchMeasure.jpg)
